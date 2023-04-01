@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Report</title>
+    <style>
+      /* Add some basic styles for the page */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background-color: #e6e6e6;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color:aqua;
+        font-size: 2em;
+        margin-top: 0;
+        text-align: center;
+      }
+      .weather-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .weather-info__icon {
+        
+        font-size: 5em;
+        margin-right: 20px;
+      }
+      .weather-info__temp {
+        color:rgb(227, 53, 18);
+        font-size: 3em;
+        font-weight: bold;
+      }
+      .weather-info__clouds {
+        color:rgb(243, 202, 148);
+        font-size: 1.5em;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .logo {
+        max-width: 100px;
+        margin: 20px auto;
+        display: block;
+      }
+      .logo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <from action="/result" method="get">
+    <div class="container">
+      <h1 id="hh">Weather Report</h1>
+      <img class="logo" id="img1"src="">
+      <div class="weather-info">
+        <i class="fas fa-cloud-sun weather-info__icon"></i>
+        <span class="weather-info__temp" id="sp1">24&deg;C</span>
+      </div>
+      <div class="weather-info__clouds" id="d1">Cloudy with a chance of rain</div>
+    </div>
+  </from>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
